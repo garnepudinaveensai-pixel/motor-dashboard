@@ -67,10 +67,10 @@ export default function Home() {
       </div>
 
       {/* ================= MAIN GRID ================= */}
-      <div className="grid grid-cols-12 gap-6 items-center mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 items-center mt-6">
 
         {/* ========== LEFT GAUGES ========== */}
-        <div className="col-span-3 flex flex-col items-center gap-10 bg-[#111827] p-4 rounded-xl border border-gray-800 shadow-lg">
+        <div className="lg:col-span-3 md:col-span-1 col-span-1 flex flex-col items-center gap-10 bg-[#111827] p-4 rounded-xl border border-gray-800 shadow-lg">
 
           <Gauge
   label="Voltage"
@@ -98,7 +98,7 @@ export default function Home() {
 
         {/* ========== CENTER MACHINE PANEL ========== */}
         <div
-          className={`col-span-6 rounded-xl border shadow-lg flex flex-col h-[520px] transition-all duration-500 ${
+          className={`lg:col-span-6 md:col-span-2 col-span-1 rounded-xl border shadow-lg flex flex-col h-[520px] transition-all duration-500 ${
             systemStatus === "CRITICAL"
               ? "bg-[#111827] border-red-500 shadow-red-500/50 shadow-2xl"
               : systemStatus === "WARNING"
@@ -164,7 +164,7 @@ export default function Home() {
         </div>
 
         {/* ========== RIGHT GAUGES ========== */}
-        <div className="col-span-3 flex flex-col items-center gap-10 bg-[#111827] p-4 rounded-xl border border-gray-800 shadow-lg">
+        <div className="lg:col-span-3 md:col-span-1 col-span-1 flex flex-col items-center gap-10 bg-[#111827] p-4 rounded-xl border border-gray-800 shadow-lg">
 
           <Gauge
   label="Vibration"
@@ -195,7 +195,7 @@ export default function Home() {
       </div>
 
       {/* ================= CHART SECTION ================= */}
-      <div className="grid grid-cols-2 gap-6 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
 
         <TrendChart
           title="Voltage Trend"

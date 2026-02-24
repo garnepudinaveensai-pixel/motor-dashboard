@@ -77,7 +77,7 @@ export default function Gauge({
   return (
     <div className="flex flex-col items-center">
 
-      <div className="relative w-80 h-80 rotate-90">
+      <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rotate-90">
 
         <svg viewBox="0 0 200 200" className="w-full h-full">
 
