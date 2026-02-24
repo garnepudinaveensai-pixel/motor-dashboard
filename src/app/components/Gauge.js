@@ -175,7 +175,7 @@ export default function Gauge({
       </div>
 
       <div
-        style={{ marginTop: "-60px" }}
+        style={{ marginTop: "-45px" }}
         className="text-sm text-gray-400 tracking-wide"
       >
         {label}
